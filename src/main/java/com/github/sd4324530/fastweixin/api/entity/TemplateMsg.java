@@ -16,6 +16,7 @@ public class TemplateMsg extends BaseModel {
     private String topcolor;
 
     private Map<String, TemplateParam> data;
+    private Map<String,String> miniprogram;
 
     public String getTouser() {
         return touser;
@@ -57,5 +58,13 @@ public class TemplateMsg extends BaseModel {
 
     public void setData(Map<String, TemplateParam> data) {
         this.data = data;
+    }
+
+    public Map<String, String> getMiniprogram() {
+        return miniprogram;
+    }
+
+    public void setMiniprogram(Map<String, String> miniprogram) {
+        this.miniprogram = miniprogram;
     }
 }
